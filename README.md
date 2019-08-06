@@ -10,4 +10,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 My approach was to iterate through the input array, starting from the last index, and then add into a temp array.
 
 ## Solution
-!(https://github.com/leepj85/data-structures-and-algorithms/code401challenges/assets/array_reverse.JPG)
+!(code401challenges/assets/array_reverse.JPG)
