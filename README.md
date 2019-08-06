@@ -11,3 +11,4 @@ My approach was to iterate through the input array, starting from the last index
 
 ## Solution
 !(code401challenges/assets/array_reverse.JPG)
+![Alt text](code401challenges/assets/array_reverse.JPG?raw=true "Title")
