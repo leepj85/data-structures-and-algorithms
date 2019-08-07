@@ -3,7 +3,7 @@
 ## 401 Code Challenges
 
 ### Week 1
-* [Array Reverse] (otherReadmes/arrayReverse.md)
+* [Array Reverse] (.otherReadmes/arrayReverse.md)
 
 
 ----
