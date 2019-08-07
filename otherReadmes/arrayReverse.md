@@ -8,4 +8,5 @@ Write a function called reverseArray which takes an array as an argument. Withou
 My approach was to iterate through the input array, starting from the last index, and then add into a temp array.
 
 #### Solution
-![Alt text](code401challenges/assets/array_reverse.JPG?raw=true "Array Reverse Whiteboard")
+![Alt text](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/assets/array_reverse.JPG)
+
