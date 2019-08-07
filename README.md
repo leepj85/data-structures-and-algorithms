@@ -3,9 +3,9 @@
 ## 401 Code Challenges
 
 ### Week 1
-* [Reverse an Array](.otherReadmes/arrayReverse.md)
+* [Reverse an Array](otherReadmes/arrayReverse.md)
 
 ### Week 2
-* [Insert Shift Array](.otherReadmes/arrayShift.md)
+* [Insert Shift Array](otherReadmes/arrayShift.md)
 
 
