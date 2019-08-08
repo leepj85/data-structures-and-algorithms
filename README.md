@@ -8,4 +8,5 @@
 ### Week 2
 * [Insert Shift Array](otherReadmes/arrayShift.md)
 
-
+### Week 3
+* [Binary Search](otherReadmes/binarySearch.md)
