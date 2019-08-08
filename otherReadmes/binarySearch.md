@@ -6,6 +6,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 #### Solution
 [Source Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/BinarySearch.java)
+
 [Test Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/BinarySearchTest.java)
 
 #### Approach & Efficiency
