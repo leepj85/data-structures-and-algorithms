@@ -11,7 +11,6 @@ public class LinkedList<T> {
         } else {
             newNode.next = head;
             head = newNode;
-
         }
     }
 
