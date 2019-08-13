@@ -13,3 +13,6 @@
 
 ### Week 4
 * [LinkedList](otherReadmes/linkedList.md)
+
+### Week 6
+* [LinkedList Insertion](otherReadmes/linkedListInsertion.md) 
