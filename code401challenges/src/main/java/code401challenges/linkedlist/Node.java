@@ -2,11 +2,27 @@ package code401challenges.linkedlist;
 
 public class Node<T> {
 
-    public T value;
-    public Node next;
+    private T value;
+    private Node<T> nextNode;
+
+    public Node(T value, Node nextNode) {
+        this.value = value;
+        this.nextNode = nextNode;
+    }
 
     public Node(T value) {
-        this.value = value;
-        this.next = null;
+        this(value, null);
+    }
+
+    public void setNextNode(Node nextNode) {
+        this.nextNode = nextNode;
+    }
+
+    public T getValue() {
+        return this.value;
+    }
+
+    public Node<T> getNextNode() {
+        return this.nextNode;
     }
 }
