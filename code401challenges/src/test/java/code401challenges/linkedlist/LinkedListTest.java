@@ -88,5 +88,29 @@ public class LinkedListTest {
                 "head --> 1 --> 3 --> 2 --> 5 --> end", insertAfterTest2.toString());
     }
 
+    @Test(expected = NullPointerException.class)
+    public void testKthFromTheEnd() {
+        LinkedList<Integer> kthTest = new LinkedList<>();
+        kthTest.append(2);
+        kthTest.append(4);
+        kthTest.append(6);
+        int result = kthTest.kthFromEnd(3);
+        assertEquals("result should equal '2'", 2, result);
+        int result1 = kthTest.kthFromEnd((0));
+        assertEquals("should grab last node value (6)", 6, result1);
+        int badresult = kthTest.kthFromEnd(6);
+//        System.out.println(badresult);
+        assertEquals("should return null", null, badresult);
+        int happyPath = kthTest.kthFromEnd(1);
+        assertEquals("should return 4", 4, happyPath);
+
+        LinkedList<Integer> oneNodeLL = new LinkedList<>();
+        oneNodeLL.append(5);
+        int x = oneNodeLL.kthFromEnd(0);
+        assertEquals("should return value '5' from single node in LL", 5, x);
+
+
+    }
+
 
 }

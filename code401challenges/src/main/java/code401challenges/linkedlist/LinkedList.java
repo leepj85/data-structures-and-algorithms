@@ -4,6 +4,23 @@ public class LinkedList<T> {
 
     private Node<T> head;
 
+    public T kthFromEnd(int k) {
+        Node current = head;
+        int length = 0;
+        while (current != null) {
+            length++;
+            current = current.getNextNode();
+        }
+        if(length < k || k < 0) {
+            return null;
+        }
+        current = head;
+        for (int i = 1; i < length - k; i++) {
+            current = current.getNextNode();
+        }
+        return (T) current.getValue();
+    }
+
     public void insert(T value) {
         Node<T> newNode = new Node<>(value);
         if (head == null) {
