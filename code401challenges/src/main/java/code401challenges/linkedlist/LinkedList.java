@@ -4,6 +4,29 @@ public class LinkedList<T> {
 
     private Node<T> head;
 
+    public static LinkedList mergeLists(LinkedList one, LinkedList two) {
+        if (one == null || two == null) {
+            throw new IllegalArgumentException();
+        }
+
+        Node list1 = one.head;
+        Node list2 = two.head;
+        Node list1NextNode = null;
+        Node list2NextNode = null;
+
+        while (list1 != null && list2 != null) {
+            list1NextNode = list1.getNextNode();
+            list2NextNode = list2.getNextNode();
+
+            list1.setNextNode(list2);
+            list2.setNextNode(list1NextNode);
+
+            list1 = list1NextNode;
+            list2 = list2NextNode;
+        }
+        return one;
+    }
+
     public T kthFromEnd(int k) {
         Node current = head;
         int length = 0;
