@@ -19,3 +19,6 @@
 
 ### Week 7
 * [LinkedList KthFromTheEnd](otherReadmes/linkedListInsertion.md)
+
+### Week *
+* [LinkedList Merge](otherReadmes/linkedListMerge.md)
