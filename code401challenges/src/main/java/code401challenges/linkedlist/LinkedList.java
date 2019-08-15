@@ -9,20 +9,20 @@ public class LinkedList<T> {
             throw new IllegalArgumentException();
         }
 
-        Node list1 = one.head;
-        Node list2 = two.head;
+        Node LLone = one.head;
+        Node LLtwo = two.head;
         Node list1NextNode = null;
         Node list2NextNode = null;
 
-        while (list1 != null && list2 != null) {
-            list1NextNode = list1.getNextNode();
-            list2NextNode = list2.getNextNode();
+        while (LLone != null && LLtwo != null) {
+            list1NextNode = LLone.getNextNode();
+            list2NextNode = LLtwo.getNextNode();
 
-            list1.setNextNode(list2);
-            list2.setNextNode(list1NextNode);
+            LLone.setNextNode(LLtwo);
+            LLtwo.setNextNode(list1NextNode);
 
-            list1 = list1NextNode;
-            list2 = list2NextNode;
+            LLone = list1NextNode;
+            LLtwo = list2NextNode;
         }
         return one;
     }
