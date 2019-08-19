@@ -18,9 +18,13 @@ Implement a Stack and a Queue Data Structure
 
 ## Solution
 [Node Source Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/stacksandqueues/Node.java)
+
 [Stack Source Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/stacksandqueues/Stack.java)
+
 [Queue Source Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/stacksandqueues/Queue.java)
 
+
 [Stack Test Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/stacksandqueues/StackTest.java)
+
 [Queue Test Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/stacksandqueues/QueueTest.java)
 
