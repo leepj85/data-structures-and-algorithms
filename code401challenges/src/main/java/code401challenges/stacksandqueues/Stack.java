@@ -2,7 +2,7 @@ package code401challenges.stacksandqueues;
 
 public class Stack<T> {
 
-    private Node<T> top;
+    protected Node<T> top;
 
     public void push(T value) {
         Node<T> newNode = new Node<T>(value, this.top);
