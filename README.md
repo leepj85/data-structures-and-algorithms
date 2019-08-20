@@ -2,26 +2,29 @@
 
 ## 401 Code Challenges
 
-### Week 1
+### Class 1
 * [Reverse an Array](otherReadmes/arrayReverse.md)
 
-### Week 2
+### Class 2
 * [Insert Shift Array](otherReadmes/arrayShift.md)
 
-### Week 3
+### Class 3
 * [Binary Search](otherReadmes/binarySearch.md)
 
-### Week 4
+### Class 4
 * [LinkedList](otherReadmes/linkedList.md)
 
-### Week 6
+### Class 6
 * [LinkedList Insertion](otherReadmes/linkedListInsertion.md) 
 
-### Week 7
+### Class 7
 * [LinkedList KthFromTheEnd](otherReadmes/linkedListInsertion.md)
 
-### Week 8
+### Class 8
 * [LinkedList Merge](otherReadmes/linkedListMerge.md)
 
-### Week 9
+### Class 9
 * [Stacks and Queues](otherReadmes/stacksAndQueues.md)
+
+### Class 11
+* [PseudoQueue](otherReadmes/pseudoQueue.md)
