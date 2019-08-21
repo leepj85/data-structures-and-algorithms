@@ -20,6 +20,7 @@ public class PseudoQueueTest {
         pseudoQueue.enqueue(3);
 //        System.out.println(pseudoQueue.dequeue());
         assertTrue(queue.dequeue().equals(pseudoQueue.dequeue()));
+        assertTrue((queue.dequeue().equals(pseudoQueue.dequeue())));
     }
 
 
