@@ -30,4 +30,4 @@
 * [PseudoQueue](otherReadmes/pseudoQueue.md)
 
 ### Clas 12
-* [FIFO Animal Shelter] (otherReadmes/fifoAnimalShelter.md)
+* [FIFO Animal Shelter](otherReadmes/fifoAnimalShelter.md)
