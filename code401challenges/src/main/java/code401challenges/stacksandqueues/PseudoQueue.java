@@ -16,7 +16,7 @@ public class PseudoQueue<T> {
             pseudoQueue.push(helperStack.pop());
         }
         T result = pseudoQueue.pop();
-        pseudoQueue.push(result);
+//        pseudoQueue.push(result);
         while(pseudoQueue.top != null) {
             helperStack.push(pseudoQueue.pop());
         }
