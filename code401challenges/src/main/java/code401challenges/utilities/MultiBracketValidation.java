@@ -13,8 +13,6 @@ public class MultiBracketValidation {
             if (character == '{' || character == '(' || character == '[') {
                 stack.push(character);
             }
-//            if (character == '(') stack.push(character);
-//            if (character == '[') stack.push(character);
 
             if (character == '}') {
                 if ((char) stack.peek() == '{') {
