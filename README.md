@@ -29,5 +29,8 @@
 ### Class 11
 * [PseudoQueue](otherReadmes/pseudoQueue.md)
 
-### Clas 12
+### Class 12
 * [FIFO Animal Shelter](otherReadmes/fifoAnimalShelter.md)
+
+### Class 13
+* [Multi-Bracket Validation](otherReadmes/multiBracketValidation.md)
