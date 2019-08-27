@@ -2,9 +2,9 @@ package code401challenges.tree;
 
 public class Node<T> {
 
-    T value;
-    Node<T> left;
-    Node<T> right;
+    public T value;
+    public Node<T> left;
+    public Node<T> right;
 
     public Node(T val) {
         this.value = val;

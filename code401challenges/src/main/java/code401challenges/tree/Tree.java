@@ -2,9 +2,9 @@ package code401challenges.tree;
 
 import java.util.ArrayList;
 
-public class BinaryTree<T> {
+public class Tree<T> {
 
-    Node<T> root;
+    public Node<T> root;
     ArrayList<T> arr = new ArrayList<>();
 
     // Root, Left, Right

@@ -1,6 +1,6 @@
 package code401challenges.tree;
 
-public class BinarySearchTree extends BinaryTree<Integer> {
+public class BinarySearchTree extends Tree<Integer> {
 
     Node<Integer> root;
 
