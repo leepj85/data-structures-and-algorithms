@@ -35,8 +35,8 @@
 ### Class 13
 * [Multi-Bracket Validation](otherReadmes/multiBracketValidation.md)
 
-### Class 16
+### Class 15
 * [Binary Tree and BST Implementation](otherReadmes/binaryTree.md)
 
-### Class 17
+### Class 16
 * [Fizz Buzz Tree](otherReadmes/fizzBuzzTree.md)
