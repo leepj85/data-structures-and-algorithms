@@ -6,14 +6,14 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-public class BinaryTreeTest {
+public class TreeTest {
 
 
 
 
     @Test
     public void preOrderTest() {
-        BinaryTree<Integer> test = new BinaryTree<>();
+        Tree<Integer> test = new Tree<>();
         test.root = new Node<Integer>(1,
                 new Node<Integer>(2,
                         new Node<Integer>(3),
@@ -29,7 +29,7 @@ public class BinaryTreeTest {
 
     @Test
     public void inOrderTest() {
-        BinaryTree<Integer> test1 = new BinaryTree<>();
+        Tree<Integer> test1 = new Tree<>();
         test1.root = new Node<Integer>(1,
                 new Node<Integer>(2,
                         new Node<Integer>(3),
@@ -43,7 +43,7 @@ public class BinaryTreeTest {
 
     @Test
     public void postOrderTest() {
-        BinaryTree<Integer> test2 = new BinaryTree<>();
+        Tree<Integer> test2 = new Tree<>();
         test2.root = new Node<Integer>(1,
                 new Node<Integer>(2,
                         new Node<Integer>(3),
