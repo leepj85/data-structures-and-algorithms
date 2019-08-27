@@ -37,3 +37,6 @@
 
 ### Class 16
 * [Binary Tree and BST Implementation](otherReadmes/binaryTree.md)
+
+### Class 17
+* [Fizz Buzz Tree](otherReadmes/fizzBuzzTree.md)
