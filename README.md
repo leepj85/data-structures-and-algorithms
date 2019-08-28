@@ -40,3 +40,6 @@
 
 ### Class 16
 * [Fizz Buzz Tree](otherReadmes/fizzBuzzTree.md)
+
+### Class 17
+* [Breadth First Tree](otherReadmes/breadthFirstTree.md)
