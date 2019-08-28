@@ -10,6 +10,6 @@ Write a breadth first traversal method which takes a Binary Tree as its unique i
 
 [Test Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/tree/TreeTest.java)
 
-##White Board
+## White Board
 ![](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/assets/breadth_first.jpg)
 
