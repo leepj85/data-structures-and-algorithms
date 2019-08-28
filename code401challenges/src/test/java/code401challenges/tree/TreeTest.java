@@ -8,9 +8,6 @@ import static org.junit.Assert.*;
 
 public class TreeTest {
 
-
-
-
     @Test
     public void preOrderTest() {
         Tree<Integer> test = new Tree<>();
@@ -53,5 +50,20 @@ public class TreeTest {
         ArrayList<Integer> arr = test2.postOrder(test2.root);
         System.out.println("postOrder: " + arr);
         assertTrue(arr.toString().equals("[3, 4, 2, 5, 1]"));
+    }
+
+    @Test
+    public void breadthFirst() {
+        Tree<Integer> tree = new Tree();
+        tree.root = new Node(2,
+                new Node(7,
+                        new Node(2),
+                        new Node(6,
+                                new Node(5),
+                                new Node(11))),
+                new Node(5, null,
+                        new Node(9,
+                                new Node(4), null)));
+        tree.breadthFirst();
     }
 }
