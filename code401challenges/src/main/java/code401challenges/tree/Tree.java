@@ -1,6 +1,8 @@
 package code401challenges.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Tree<T> {
 
@@ -45,5 +47,25 @@ public class Tree<T> {
         }
         arr.add((T)node.value);
         return arr;
+    }
+
+
+    public void breadthFirst(){
+        Queue<Node> queue = new LinkedList();
+        if (this.root == null) {
+            System.out.println("Tree is empty");
+        }
+        else {
+            queue.add(this.root);
+            while (!queue.isEmpty()) {
+                Node currentNode = queue.remove();
+                System.out.println(currentNode.value);
+                if (currentNode.left != null) {
+                    queue.add(currentNode.left);
+                }
+                if (currentNode.right != null) {
+                    queue.add(currentNode.right);}
+            }
+        }
     }
 }
