@@ -68,4 +68,24 @@ public class Tree<T> {
             }
         }
     }
+
+    public int findMaximumValue() {
+        int maxValue = (int) root.value;
+        Queue<Node> queue = new LinkedList();
+        queue.add(this.root);
+        while (!queue.isEmpty()) {
+            Node current = queue.remove();
+            if ((int)current.value > maxValue){
+                maxValue = (int)current.value;
+            }
+            if (current.left != null) {
+                queue.add(current.left);
+            }
+            if (current.right != null) {
+                queue.add(current.right);
+            }
+
+        }
+        return maxValue;
+    }
 }
