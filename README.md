@@ -43,3 +43,6 @@
 
 ### Class 17
 * [Breadth First Tree](otherReadmes/breadthFirstTree.md)
+
+### Class 18
+* [Find Max Value Tree](otherReadmes/findMaximumBinaryTree.md)
