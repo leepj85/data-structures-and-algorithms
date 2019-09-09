@@ -46,3 +46,6 @@
 
 ### Class 18
 * [Find Max Value Tree](otherReadmes/findMaximumBinaryTree.md)
+
+### Class 26
+* [Insertion Sort](otherReadmes/insertionSort.md)
