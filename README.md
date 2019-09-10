@@ -49,3 +49,6 @@
 
 ### Class 26
 * [Insertion Sort](otherReadmes/insertionSort.md)
+
+### Class 27
+* [Merge Sort](otherReadmes/mergeSort.md)
