@@ -52,3 +52,6 @@
 
 ### Class 27
 * [Merge Sort](otherReadmes/mergeSort.md)
+
+### Class 28
+* [Quick Sort](otherReadmes/quickSort.md)
