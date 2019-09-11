@@ -1,3 +1,40 @@
+# Quick Sort
+Quicksort is a sorting algorithm, which is leveraging the divide-and-conquer principle. It has an average O(n log n) complexity and it’s one of the most used sorting algorithms, especially for big data volumes.
+
+## Learning Objectives
+Learn how to implement a quick sort algorithm for a list data structure.
+
+### Algorithm
+The input list is divided into two sub-lists by an element called pivot; one sub-list with elements less than the pivot and another one with elements greater than the pivot. This process repeats for each sub-list.
+
+### Pseudocode
+    ALGORITHM QuickSort(arr, left, right)
+        if left < right
+            // Partition the array by setting the position of the pivot value 
+            DEFINE position <-- Partition(arr, left, right)
+            // Sort the left
+            QuickSort(arr, left, position - 1)
+            // Sort the right
+            QuickSort(arr, position + 1, right)
+
+    ALGORITHM Partition(arr, left, right)
+        // set a pivot value as a point of reference
+        DEFINE pivot <-- arr[right]
+        // create a variable to track the largest index of numbers lower than the defined pivot
+        DEFINE low <-- left - 1
+        for i <- left to right do
+            if arr[i] <= pivot
+
+### Readings and References
+* Watch
+  * https://www.youtube.com/watch?v=PgBzjlCcFvc
+
+* Read
+  * https://www.baeldung.com/java-quicksort
+  * https://en.wikipedia.org/wiki/Quicksort
+
+---
+
 # Merge Sort
 Merge sort is one of the most efficient sorting techniques and it's based on the “divide and conquer” paradigm.
 
@@ -12,39 +49,39 @@ The algorithm can be described as the following 2 step process:
 
 ### Pseudocode
 
-ALGORITHM Mergesort(arr)
-    DECLARE n <-- arr.length
-           
-    if n > 1
-      DECLARE mid <-- n/2
-      DECLARE left <-- arr[0...mid]
-      DECLARE right <-- arr[mid...n]
-      // sort the left side
-      Mergesort(left)
-      // sort the right side
-      Mergesort(right)
-      // merge the sorted left and right sides together
-      Merge(left, right, arr)
+    ALGORITHM Mergesort(arr)
+        DECLARE n <-- arr.length
 
-ALGORITHM Merge(left, right, arr)
-    DECLARE i <-- 0
-    DECLARE j <-- 0
-    DECLARE k <-- 0
+        if n > 1
+          DECLARE mid <-- n/2
+          DECLARE left <-- arr[0...mid]
+          DECLARE right <-- arr[mid...n]
+          // sort the left side
+          Mergesort(left)
+          // sort the right side
+          Mergesort(right)
+          // merge the sorted left and right sides together
+          Merge(left, right, arr)
 
-    while i < left.length && j < right.length
-        if left[i] <= right[j]
-            arr[k] <-- left[i]
-            i <-- i + 1
+    ALGORITHM Merge(left, right, arr)
+        DECLARE i <-- 0
+        DECLARE j <-- 0
+        DECLARE k <-- 0
+
+        while i < left.length && j < right.length
+            if left[i] <= right[j]
+                arr[k] <-- left[i]
+                i <-- i + 1
+            else
+                arr[k] <-- right[j]
+                j <-- j + 1
+
+            k <-- k + 1
+
+        if i = left.length
+           set remaining entries in arr to remaining values in right
         else
-            arr[k] <-- right[j]
-            j <-- j + 1
-            
-        k <-- k + 1
-
-    if i = left.length
-       set remaining entries in arr to remaining values in right
-    else
-       set remaining entries in arr to remaining values in left
+           set remaining entries in arr to remaining values in left
 
 
 ### Readings and References
