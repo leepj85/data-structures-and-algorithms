@@ -55,3 +55,6 @@
 
 ### Class 28
 * [Quick Sort](otherReadmes/quickSort.md)
+
+### Class 29
+* [Hash Table](otherReadmes/hashTable.md)
