@@ -58,3 +58,4 @@
 
 ### Class 29
 * [Hash Table](otherReadmes/hashTable.md)
+* [Repeated Word](otherReadmes/repeatedWord.md)
