@@ -2,7 +2,7 @@ package code401challenges.tree;
 
 public class BinarySearchTree extends Tree<Integer> {
 
-    Node<Integer> root;
+    public Node<Integer> root;
 
     public BinarySearchTree() {
         root = null;
