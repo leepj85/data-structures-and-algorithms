@@ -59,3 +59,6 @@
 ### Class 29
 * [Hash Table](otherReadmes/hashTable.md)
 * [Repeated Word](otherReadmes/repeatedWord.md)
+
+### Class 32
+* [Tree Insertion](otherReadmes/treeIntersection.md)
