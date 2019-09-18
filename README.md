@@ -62,3 +62,6 @@
 
 ### Class 32
 * [Tree Insertion](otherReadmes/treeIntersection.md)
+
+### Class 33
+* [Left Join](otherReadmes/leftJoin.md)
