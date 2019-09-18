@@ -11,7 +11,7 @@ Implement a simplified LEFT JOIN for 2 Hashmaps.
 * Avoid utilizing any of the library methods available to your language.
 
 ## Approach & Efficiency
-![Whiteboard](code401challenges/assets/left_join.JPG)
+![Whiteboard](assets/left_join.JPG)
 
 ## Solution
 [Source Code](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/hashtable/LeftJoin.java)
