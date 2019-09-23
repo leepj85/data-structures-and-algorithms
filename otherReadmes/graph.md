@@ -28,3 +28,6 @@ Implement a Graph & Implement a breadth-first traversal on a graph.
 [Source Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/graph)
 
 [Test Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/graph/GraphTest.java)
+
+## Whiteboard
+![Graph Whiteboard](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/assets/breadth-first-traversal-graph.png)
