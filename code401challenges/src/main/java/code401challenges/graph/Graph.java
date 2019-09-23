@@ -1,9 +1,6 @@
 package code401challenges.graph;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Graph<E> {
     private Map<Node, Set<Node>> vertices;
@@ -51,6 +48,31 @@ public class Graph<E> {
 
     public int size() {
         return this.vertices.size();
+    }
+
+    public List<Node> breadthFirstTraversal(Node node) {
+        Set<Node> visitedNodes = new HashSet<>();
+        List<Node> results = new ArrayList<>();
+        Queue<Node> queue = new LinkedList<>();
+
+        visitedNodes.add(node);
+        queue.add(node);
+        results.add(node);
+
+        while (queue.size() != 0)
+        {
+            node = queue.poll();
+
+            if(!visitedNodes.contains(node)) {
+                results.add(node);
+            }
+            visitedNodes.add(node);
+
+            vertices.get(node).forEach( neighbor -> {
+                if(!visitedNodes.contains(neighbor))  queue.add(neighbor);
+            });
+        }
+        return results;
     }
 
 }
