@@ -65,3 +65,6 @@
 
 ### Class 33
 * [Left Join](otherReadmes/leftJoin.md)
+
+### Class 36
+* [Graph Lab](otherReadmes/graph.md)
