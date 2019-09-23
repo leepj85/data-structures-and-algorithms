@@ -2,6 +2,7 @@ package code401challenges.graph;
 
 import org.junit.Test;
 
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -9,6 +10,7 @@ import static org.junit.Assert.*;
 public class GraphTest {
 
     Graph<Integer> graphTest = new Graph<>();
+    Graph<String> graphString = new Graph<>();
 
 
     @Test
@@ -50,5 +52,27 @@ public class GraphTest {
     public void size() {
         graphTest.addNode(1);
         assertTrue(graphTest.size() == 1);
+    }
+
+    @Test
+    public void breadthFirstTraversal() {
+        Node node1 = graphString.addNode("Pandora");
+        Node node2 = graphString.addNode("Arendelle");
+        Node node3 = graphString.addNode("Metroville");
+        Node node4 = graphString.addNode("Monstropolis");
+        Node node5 = graphString.addNode("Narnia");
+        Node node6 = graphString.addNode("Naboo");
+
+        graphString.addEdge(node1, node2, 0);
+        graphString.addEdge(node2, node3, 0);
+        graphString.addEdge(node2, node4, 0);
+        graphString.addEdge(node3, node4, 0);
+        graphString.addEdge(node3, node5, 0);
+        graphString.addEdge(node3, node6, 0);
+        graphString.addEdge(node5, node6, 0);
+
+        List<Node> results = graphString.breadthFirstTraversal(node1);
+        assertEquals("[Pandora, Arendelle, Monstropolis, Metroville, Narnia, Naboo]", results.toString());
+
     }
 }
