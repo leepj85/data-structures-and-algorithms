@@ -75,4 +75,31 @@ public class Graph<E> {
         return results;
     }
 
+    public static String getEdge(Node[] cityList, Graph graph) {
+        int sumCost = 0;
+        String results = "False, $";
+
+        Set graphCities = graph.getNodes();
+
+        for(int i = 0; i < cityList.length - 1; i++) {
+            int weight = 0;
+
+            if(!graph.getNeighbors(cityList[i]).contains(cityList[i + 1])) {
+                return results + "0";
+            } else {
+                Set<Edge> toEdges = cityList[i].edges;
+                for(Edge edge : toEdges) {
+                    if (cityList[i].edges.contains(edge) &&
+                            (edge.a.equals(cityList[i]) && edge.b.equals(cityList[i + 1])) ||
+                            (edge.a.equals(cityList[i + 1]) && edge.b.equals(cityList[i]))) {
+                        weight = edge.getWeight();
+                    }
+                }
+                sumCost += weight;
+            }
+        }
+        return "True, $" + sumCost;
+    }
+
+
 }
