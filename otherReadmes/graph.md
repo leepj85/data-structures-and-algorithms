@@ -31,3 +31,16 @@ Implement a Graph & Implement a breadth-first traversal on a graph.
 
 ## Whiteboard
 ![Graph Whiteboard](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/assets/breadth-first-traversal-graph.png)
+
+---
+
+## Challenge
+Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
+
+## Solution
+[Source Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/graph/Graph.java)
+
+[Test Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/graph/GraphTest.java)
+
+## Solution
+![Graph Get Edge](code401challenges/assets/graph_get_edge.png)
