@@ -43,4 +43,4 @@ Given a business trip itinerary, and an Alaska Airlines route map, is the trip p
 [Test Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/graph/GraphTest.java)
 
 ## Solution
-![Graph Get Edge](code401challenges/assets/graph_get_edge.png)
+![Graph Get Edge](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/assets/graph_get_edge.png)
