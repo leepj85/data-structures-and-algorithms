@@ -2,6 +2,7 @@ package code401challenges.graph;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -11,6 +12,7 @@ public class GraphTest {
 
     Graph<Integer> graphTest = new Graph<>();
     Graph<String> graphString = new Graph<>();
+    Graph<String> edgeGraph = new Graph<>();
 
 
     @Test
@@ -72,7 +74,39 @@ public class GraphTest {
         graphString.addEdge(node5, node6, 0);
 
         List<Node> results = graphString.breadthFirstTraversal(node1);
-        assertEquals("[Pandora, Arendelle, Monstropolis, Metroville, Narnia, Naboo]", results.toString());
+        assertEquals(6, results.size());
 
+    }
+
+    @Test
+    public void getEdge() {
+
+
+        Node metroville = edgeGraph.addNode("Metroville");
+        Node pandora = edgeGraph.addNode("Pandora");
+        Node arendelle = edgeGraph.addNode("Arendelle");
+        Node monstropolis = edgeGraph.addNode("Monstropolis");
+        Node naboo = edgeGraph.addNode("Naboo");
+        Node narnia = edgeGraph.addNode("Narnia");
+
+        edgeGraph.addEdge(metroville, pandora, 82);
+        edgeGraph.addEdge(metroville, arendelle, 99);
+        edgeGraph.addEdge(metroville, monstropolis, 105);
+        edgeGraph.addEdge(metroville, naboo, 26);
+        edgeGraph.addEdge(metroville, narnia, 37);
+        edgeGraph.addEdge(pandora, arendelle, 150);
+        edgeGraph.addEdge(arendelle, monstropolis, 42);
+        edgeGraph.addEdge(monstropolis, naboo, 73);
+        edgeGraph.addEdge(narnia, naboo, 250);
+
+
+        Node[] test = new Node[]{metroville, pandora};
+        Node[] test1 = new Node[]{arendelle, monstropolis, naboo};
+        Node[] test2 = new Node[]{naboo, pandora};
+        Node[] test3 = new Node[]{narnia, arendelle, naboo};
+        assertEquals("True, $82", Graph.getEdge(test, edgeGraph));
+        assertEquals("True, $115", Graph.getEdge(test1, edgeGraph));
+        assertEquals("False, $0", Graph.getEdge(test2, edgeGraph));
+        assertEquals("False, $0", Graph.getEdge(test3, edgeGraph));
     }
 }
