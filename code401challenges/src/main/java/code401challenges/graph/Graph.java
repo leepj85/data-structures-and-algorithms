@@ -59,8 +59,7 @@ public class Graph<E> {
         queue.add(node);
         results.add(node);
 
-        while (queue.size() != 0)
-        {
+        while (queue.size() != 0) {
             node = queue.poll();
 
             if(!visitedNodes.contains(node)) {
@@ -69,7 +68,34 @@ public class Graph<E> {
             visitedNodes.add(node);
 
             vertices.get(node).forEach( neighbor -> {
-                if(!visitedNodes.contains(neighbor))  queue.add(neighbor);
+                if(!visitedNodes.contains(neighbor)) {
+                    queue.add(neighbor);
+                }
+            });
+        }
+        return results;
+    }
+
+    public List<Node> depthFirstTraversal(Node node) {
+        Set<Node> visitedNodes = new HashSet<>();
+        List<Node> results = new ArrayList<>();
+        Stack<Node> stack = new Stack<>();
+
+        visitedNodes.add(node);
+        stack.add(node);
+        results.add(node);
+
+        while (stack.size() != 0) {
+            node = stack.pop();
+
+            if(!visitedNodes.contains(node)) {
+                results.add(node);
+            }
+            visitedNodes.add(node);
+            vertices.get(node).forEach( neighbor -> {
+                if(!visitedNodes.contains(neighbor)) {
+                    stack.add(neighbor);
+                }
             });
         }
         return results;

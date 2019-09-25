@@ -13,6 +13,7 @@ public class GraphTest {
     Graph<Integer> graphTest = new Graph<>();
     Graph<String> graphString = new Graph<>();
     Graph<String> edgeGraph = new Graph<>();
+    Graph<String> breadthGraph = new Graph<>();
 
 
     @Test
@@ -108,5 +109,29 @@ public class GraphTest {
         assertEquals("True, $115", Graph.getEdge(test1, edgeGraph));
         assertEquals("False, $0", Graph.getEdge(test2, edgeGraph));
         assertEquals("False, $0", Graph.getEdge(test3, edgeGraph));
+    }
+
+    @Test
+    public void depthFirstTraversal() {
+        Node nodeA = breadthGraph.addNode("A");
+        Node nodeB = breadthGraph.addNode("B");
+        Node nodeC = breadthGraph.addNode("C");
+        Node nodeD = breadthGraph.addNode("D");
+        Node nodeE = breadthGraph.addNode("E");
+        Node nodeF = breadthGraph.addNode("F");
+        Node nodeG = breadthGraph.addNode("G");
+        Node nodeH = breadthGraph.addNode("H");
+
+        breadthGraph.addEdge(nodeA, nodeB, 0);
+        breadthGraph.addEdge(nodeB, nodeC, 0);
+        breadthGraph.addEdge(nodeC, nodeG, 0);
+        breadthGraph.addEdge(nodeA, nodeD, 0);
+        breadthGraph.addEdge(nodeD, nodeE, 0);
+        breadthGraph.addEdge(nodeD, nodeF, 0);
+        breadthGraph.addEdge(nodeF, nodeH, 0);
+        breadthGraph.addEdge(nodeD, nodeH, 0);
+
+        List<Node> results = breadthGraph.depthFirstTraversal(nodeA);
+        assertEquals("[A, B, C, G, D, E, H, F]", results.toString());
     }
 }
