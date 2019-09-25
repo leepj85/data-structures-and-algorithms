@@ -66,7 +66,7 @@
 ### Class 33
 * [Left Join](otherReadmes/leftJoin.md)
 
-### Class 36 & 37
+### Class 36 & 37 & 38
 * [Graph Lab & Code Challenge](otherReadmes/graph.md)
 
 
