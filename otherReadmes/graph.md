@@ -1,11 +1,11 @@
-# Graph Labs
+# Graph Labs 
+(Challenges below)
+
 Implement a Graph & Implement a breadth-first traversal on a graph & Conduct a depth first preorder traversal on a graph.
 
-## Challenge
+## Feature Tasks
 * The graph should be represented as an adjacency list, with the following methods (as shown in API list below).
 * Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
-* Create a function that accepts an adjacency list as a graph, and conducts a depth first traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order depth-first traversal order.
-
 
 ## API
   1. AddNode()
@@ -47,5 +47,18 @@ Given a business trip itinerary, and an Alaska Airlines route map, is the trip p
 
 [Test Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/graph/GraphTest.java)
 
-## Solution
+## Whiteboard
 ![Graph Get Edge](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/assets/graph_get_edge.png)
+
+---
+
+## Challenge (38)
+Create a function that accepts an adjacency list as a graph, and conducts a depth first traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order depth-first traversal order.
+
+## Solution
+[Source Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/graph/Graph.java)
+
+[Test Code - Graph](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/graph/GraphTest.java)
+
+## Whiteboard
+![Graph DFS](https://github.com/leepj85/data-structures-and-algorithms/blob/master/code401challenges/assets/dfs_graph.png)
