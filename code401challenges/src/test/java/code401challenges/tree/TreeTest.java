@@ -54,16 +54,32 @@ public class TreeTest {
 
     @Test
     public void breadthFirst() {
-        Tree<Integer> tree = new Tree();
-        tree.root = new Node(2,
-                new Node(7,
-                        new Node(2),
-                        new Node(6,
-                                new Node(5),
-                                new Node(11))),
-                new Node(5, null,
-                        new Node(9,
-                                new Node(4), null)));
+        Tree<Integer> tree = new Tree<>();
+        tree.root = new Node<Integer>(2,
+                new Node<Integer>(7,
+                        new Node<Integer>(2),
+                        new Node<Integer>(6,
+                                new Node<Integer>(5),
+                                new Node<Integer>(11))),
+                new Node<Integer>(5, null,
+                        new Node<Integer>(9,
+                                new Node<Integer>(4), null)));
         tree.breadthFirst();
+    }
+
+    @Test
+    public void findMaximumValue() {
+        Tree<Integer> tree = new Tree<>();
+        tree.root = new Node<Integer>(2,
+                new Node<Integer>(7,
+                        new Node<Integer>(2),
+                        new Node<Integer>(6,
+                                new Node<Integer>(5),
+                                new Node<Integer>(11))),
+                new Node<Integer>(5, null,
+                        new Node<Integer>(9,
+                                new Node<Integer>(4), null)));
+        int result = tree.findMaximumValue();
+        assertTrue(result == 11);
     }
 }
